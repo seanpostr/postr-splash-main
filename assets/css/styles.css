@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Anonymous Pro";    
+    src: url('../fonts/AnonymousPro/AnonymousPro-Regular.ttf') format('truetype');    
+    font-style: normal;    
+}
+
+@font-face {
+    font-family: "Code Pro LC";    
+    src: url('../fonts/CodeProLC/CodeProLC.woff2') format('woff2');    
+    font-style: normal;    
+}
+
+body {  
+    font-family: 'Code Pro LC' !important;
+    background-image: linear-gradient(to bottom, #ffffff, #ccccd1, #9a9ca6, #6a6f7c, #3b4555) !important; 
+}
+
+.typewriter {
+    font-family: 'Anonymous Pro', monospace;  
+    font-weight: 800;
+    height: 3.125rem;       
+}
+
+.typed::after{
+    content: "|";
+    font-size: 100%;
+    line-height: 1.875rem;
+    animation: blink .8s step-end infinite;    
+}
+  
+@keyframes blink {
+from, to { color: transparent }
+50% { color: rgb(119, 119, 119) }
+}
+
+.typed-first {
+    line-height: auto;
+}
+
+.typed-second {
+    line-height: auto;
+}
+
+.hero-logo {
+    height: 5rem;    
+    width: 14rem;         
+}
+
+.accounts {
+    display: none;
+}
+
+.accounts + label {
+    background-color: #cacdd3;   
+    border-radius: 1.5625rem;
+    display: inline-block;
+    padding: .5rem 1.25rem;
+    cursor: pointer;     
+}
+
+@media (hover: hover) {
+    .accounts:hover + label {
+        background-color: #8693a8;
+        color: #ffffff;
+    }
+}
+
+.accounts:checked + label {
+    background-color: #8693a8;
+    color: #ffffff;
+}
+
+.container-sm {
+    max-width: 850px !important;   
+}
+
+.application {
+    background-color: #ffffff;
+    border-radius: 1.5rem;     
+}
+
+.countdown {
+    background-color: #ffffff;
+    border-radius: 1.25rem;        
+}
+
+.countdown h1 {  
+    background: -webkit-linear-gradient(hsl(217, 18%, 28%),hsl(216, 18%, 65%));
+    font-weight: bolder;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+}
+
+.countdown span {
+    background: -webkit-linear-gradient(hsl(217, 18%, 28%),hsl(214, 37%, 30%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 576px) {
+    .countdown h1 {  
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    .countdown span {
+        font-size: 1rem;
+    }
+}
+
+.textOnInput {
+    position: relative;
+    width: 100%;        
+}
+
+.textOnInput label {
+    color: #6d798b;
+    position: absolute;
+    top: -11px;
+    left: 23px;
+    padding: 0 .3rem;
+    z-index: 1;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: .5rem;         
+}
+
+.textOnInput label:after {
+    content: " ";
+    background-color: #fff;
+    width: 100%;
+    height: 0.813rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;    
+}
+
+.textOnInput svg {
+    fill: #cacdd3;
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;  
+    top: 10px;
+    right: 10px; 
+}
+
+.form-control {
+    box-shadow: none !important;
+    border-radius: 1.5625rem !important;        
+}
+
+.pr-35 {
+    padding-right: 35px !important; 
+}
+
+button {
+    background-color: #cacdd3; 
+    border: none;  
+    border-radius: 1.5625rem !important;
+    display: inline-block;
+    padding: .5rem 1.25rem;
+    cursor: pointer;  
+}
+
+button:hover {
+    background-color: #8693a8;
+    color: #ffffff;
+}
+
+.footer-logo {
+    height: 4rem !important;
+    width: 10rem !important;        
+}
+
+.footer-svg svg {
+    fill: #ffffff ;
+    height: 1.65rem;    
+    width: 1.65rem;
+}
